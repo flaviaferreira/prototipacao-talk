@@ -1,0 +1,153 @@
+// Bespoke Classes: https://github.com/markdalgleish/bespoke-classes
+// Stylus: http://learnboost.github.io/stylus
+
+@import 'normalizecss/normalize.css'
+
+$media-query-desktop        = 'screen and (min-width: 1000px)';
+$media-query-tablet         = 'screen and (max-width: 760px)';
+$media-query-mobile-wide    = 'screen and (min-width: 480px)';
+$media-query-mobile         = 'screen and (max-width: 480px)';
+
+@font-face
+  font-family: 'Fira Sans'
+  src: local('Fira Sans Regular'), url('https://mozorg.cdn.mozilla.net/media/fonts/FiraSans-Regular.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+a:link,
+a:visited {
+  color: #0096dd
+  text-decoration: none
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #0073aa
+  text-decoration: underline
+}
+
+h1
+  letter-spacing: -2px;
+
+h2
+  letter-spacing: -1px;
+
+
+h3
+  letter-spacing: -0.5px;
+
+
+h4
+  letter-spacing: -0.25px;
+
+
+h5
+  font-size: 16px;
+
+
+h6
+  font-size: 14px;
+
+
+$orange = #F30
+$white = #FFF
+$serif = didot, times new roman, serif
+$sans-serif = 'Fira Sans', helvetica, arial, arial, sans-serif
+$monospace = prestige elite std, consolas, courier new, monospace
+$emdash = '\2014'
+
+.bespoke-parent
+  text-size-adjust: auto
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: hidden
+  font-family: $sans-serif
+  border-top: 2px solid #fff
+
+
+.bespoke-scale-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  pointer-events: none
+  .bespoke-active
+    pointer-events: auto
+
+.bespoke-slide
+  width: 640px
+  height: 480px
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -(@width / 2)
+  margin-top: -(@height / 2)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.bespoke-inactive
+  opacity: 0
+  pointer-events: none
+
+.bespoke-bullet-inactive
+  opacity: 0
+  pointer-events: none
+
+.bespoke-backdrop
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: -1
+  opacity: 0
+
+.bespoke-backdrop-active
+  opacity: 1
+
+.bespoke-progress-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: .3vw
+
+.bespoke-progress-bar
+  position: absolute
+  height: 100%
+  background: #ccc
+  transition: width .6s ease
+
+.emphatic
+  background: #222
+
+.emphatic-text
+  color: white
+
+
+@media $media-query-tablet {
+
+  .bespoke-parent {
+    background: linear-gradient(to bottom, #D7D3C8, #F6F4EC)
+    background-repeat: no-repeat, repeat, repeat;
+    background-position: bottom right;
+  }
+
+}
+
+@media $media-query-mobile-wide {
+
+  .bespoke-parent {
+    background: linear-gradient(to bottom, #D7D3C8, #F6F4EC)
+    background-repeat: no-repeat, repeat, repeat;
+    background-position: bottom right;
+  }
+
+}

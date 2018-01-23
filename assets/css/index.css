@@ -1,0 +1,145 @@
+.color {
+  --black: #181818;
+  --white: #f4f4f4;
+  --red: #f85353;
+}
+
+/*BACKGROUND*/
+.background-none {
+  background: none;
+}
+
+.background-black {
+  background-color: #181818;
+}
+
+.background-white {
+  background-color: #f4f4f4;
+}
+
+.background-red {
+  background-color: #f85353;
+}
+
+/*FONT*/
+.decoration-none {
+  text-decoration: none !important;
+}
+
+.font-black {
+  color: #181818;
+}
+
+.font-white {
+  color: #f4f4f4;
+}
+
+.font-red {
+  color: #f85353;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-70 {
+  font-size: 70px;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-justify {
+  text-align: justify;
+}
+
+/*MARGIN*/
+.m-0 {
+  margin: 0;
+}
+
+/*HEIGHT*/
+.h-auto {
+  height: auto;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.h-100px {
+  height: 100px;
+}
+
+/*WIDTH*/
+.w-auto {
+  width: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.link-name-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50vw;
+  justify-content: space-around;
+}
+
+.link-name {
+  text-decoration: none !important;
+  color: #181818 !important;
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: Raleway !important;
+  margin: 0 !important;
+}
+
+.logo {
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+}
+
+.logo img {
+  height:  40px;
+}
